@@ -3,8 +3,6 @@ require 'stripe'
 module Aptible
   module Billing
     class BillingDetail < Resource
-      belongs_to :billing_contact
-
       field :id
       field :created_at, type: Time
       field :updated_at, type: Time
