@@ -6,7 +6,7 @@ require 'English'
 require 'aptible/billing/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = 'aptible-billing-ruby'
+  spec.name          = 'aptible-billing'
   spec.version       = Aptible::Billing::VERSION
   spec.authors       = ['Blake Pettersson']
   spec.email         = ['blake@aptible.com']
