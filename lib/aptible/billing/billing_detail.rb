@@ -10,7 +10,8 @@ module Aptible
       field :stripe_subscription_id
       field :stripe_subscription_status
       field :plan
-      field :billing_contact_id
+      field :billing_contact
+      field :organization
 
       def stripe_customer
         return nil if stripe_customer_id.nil?
