@@ -6,10 +6,11 @@ module Aptible
     include GemConfig::Base
 
     with_configuration do
+      override = ENV['APTIBLE_BILLING_ROOT_URL']
       has :root_url,
           classes: [String],
-          default: ENV['APTIBLE_BILLING_ROOT_URL'] || 'https://billing.aptible.com'
-      end
+          default: override || 'https://billing.aptible.com'
+    end
   end
 end
 

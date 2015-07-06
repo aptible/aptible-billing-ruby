@@ -20,8 +20,8 @@ describe Aptible::Billing do
 
   it 'should be able to override root_url programatically' do
     config = described_class.configuration
-    Aptible::Billing.configure do |config|
-      config.root_url = 'http://foobar.com'
+    Aptible::Billing.configure do |c|
+      c.root_url = 'http://foobar.com'
     end
 
     expect(config.root_url).to eq 'http://foobar.com'

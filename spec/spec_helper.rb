@@ -9,7 +9,6 @@ end
 # Require library up front
 require 'aptible/billing'
 
-
 RSpec.configure do |config|
   config.before { Aptible::Billing.configuration.reset }
 end
