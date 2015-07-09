@@ -7,4 +7,8 @@ Dir["#{File.dirname(__FILE__)}/shared/**/*.rb"].each do |file|
 end
 
 # Require library up front
-require 'aptible/billing/ruby'
+require 'aptible/billing'
+
+RSpec.configure do |config|
+  config.before { Aptible::Billing.configuration.reset }
+end
