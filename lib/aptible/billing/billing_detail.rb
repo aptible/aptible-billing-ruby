@@ -10,8 +10,24 @@ module Aptible
       field :stripe_subscription_id
       field :stripe_subscription_status
       field :plan
-      field :billing_contact
-      field :organization
+
+      def organization
+        Aptible::Auth::Organization.find_by_url(
+          links['organization'].href,
+          token: token,
+          headers: headers)
+      rescue
+        nil
+      end
+
+      def billing_contact
+        Aptible::Auth::User.find_by_url(
+          links['billing_contact'].href,
+          token: token,
+          headers: headers)
+      rescue
+        nil
+      end
 
       def stripe_customer
         return nil if stripe_customer_id.nil?
