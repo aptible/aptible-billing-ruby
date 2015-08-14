@@ -15,3 +15,4 @@ module Aptible
 end
 
 require 'aptible/billing/billing_detail'
+require 'aptible/billing/meter'
