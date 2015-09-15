@@ -1,6 +1,6 @@
 # ![](https://raw.github.com/aptible/straptible/master/lib/straptible/rails/templates/public.api/icon-60px.png) Aptible::Billing
 
-[![Gem Version](https://badge.fury.io/rb/aptible-billing-ruby.png)](https://rubygems.org/gems/aptible-billing)
+[![Gem Version](https://badge.fury.io/rb/aptible-billing.png)](https://rubygems.org/gems/aptible-billing)
 [![Build Status](https://travis-ci.org/aptible/aptible-billing-ruby.png?branch=master)](https://travis-ci.org/aptible/aptible-billing-ruby)
 [![Dependency Status](https://gemnasium.com/aptible/aptible-billing-ruby.png)](https://gemnasium.com/aptible/aptible-billing-ruby)
 
