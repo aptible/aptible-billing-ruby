@@ -10,6 +10,7 @@ module Aptible
       field :updated_at, type: Time
       field :started_at, type: Time
       field :ended_at, type: Time
+      belongs_to :billing_detail
 
       def billing_detail
         Aptible::Billing::BillingDetail.find_by_url(

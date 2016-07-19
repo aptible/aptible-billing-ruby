@@ -10,6 +10,7 @@ module Aptible
       field :stripe_subscription_id
       field :stripe_subscription_status
       field :plan
+      has_many :meters
 
       def organization
         Aptible::Auth::Organization.find_by_url(
