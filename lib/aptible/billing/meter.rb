@@ -10,15 +10,7 @@ module Aptible
       field :updated_at, type: Time
       field :started_at, type: Time
       field :ended_at, type: Time
-
-      def billing_detail
-        Aptible::Billing::BillingDetail.find_by_url(
-          links['billing_detail'].href,
-          token: token,
-          headers: headers)
-      rescue
-        nil
-      end
+      belongs_to :billing_detail
     end
   end
 end
