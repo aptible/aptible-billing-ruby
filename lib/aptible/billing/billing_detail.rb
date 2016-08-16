@@ -15,7 +15,8 @@ module Aptible
         Aptible::Auth::Organization.find_by_url(
           links['organization'].href,
           token: token,
-          headers: headers)
+          headers: headers
+        )
       rescue
         nil
       end
@@ -24,7 +25,8 @@ module Aptible
         Aptible::Auth::User.find_by_url(
           links['billing_contact'].href,
           token: token,
-          headers: headers)
+          headers: headers
+        )
       rescue
         nil
       end
