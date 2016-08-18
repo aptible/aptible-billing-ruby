@@ -15,7 +15,8 @@ module Aptible
         Aptible::Billing::BillingDetail.find_by_url(
           links['billing_detail'].href,
           token: token,
-          headers: headers)
+          headers: headers
+        )
       rescue
         nil
       end
