@@ -20,7 +20,7 @@ Gem::Specification.new do |spec|
   spec.require_paths = ['lib']
 
   spec.add_dependency 'stripe', '>= 1.13.0'
-  spec.add_dependency 'activesupport', '~> 4.0'
+  spec.add_dependency 'activesupport', '>= 4.0', '< 6.0'
   spec.add_dependency 'aptible-resource', '~> 0.4.0'
 
   spec.add_development_dependency 'bundler', '~> 1.10'
